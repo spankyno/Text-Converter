@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Converter - Conversor de Markdown, HTML y Rich Text</title>
+    <meta name="description" content="Text Converter: La mejor herramienta gratuita y 100% privada para convertir bidireccionalmente entre Markdown, HTML, Rich Text y Texto Plano. Limpia el formato de Word, Google Docs y Notion al instante." />
+    <meta property="og:title" content="Text Converter - Conversor Bidireccional de Texto y Markdown" />
+    <meta property="og:description" content="Text Converter: Convierte entre Markdown, HTML, Rich Text y Texto Plano al instante. Copia con formato nativo para Gmail, Docs, Word y Notion sin enviar datos a servidores." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Text Converter - Conversor de Markdown, HTML y Rich Text" />
+    <meta name="twitter:description" content="100% Client-side. Convierte y limpia texto entre Markdown, HTML y Rich Text en tiempo real." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      // Immediate theme initialization to prevent flash
+      (function() {
+        try {
+          const savedTheme = localStorage.getItem('cleanmark-theme');
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="h-full bg-slate-50 dark:bg-[#0b0f19] text-slate-900 dark:text-slate-100 antialiased font-sans selection:bg-indigo-500/20 selection:text-indigo-600 dark:selection:text-indigo-400">
+    <div id="root" class="h-full"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "Text Converter",
+  "description": "Bidirectional converter between HTML, Markdown, Rich Text, and Plain Text. Clean Word, Docs & Notion formatting with 1-click rich clipboard copy. 100% in-browser.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
